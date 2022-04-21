@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menggunakan tata letak ConstraintLayout untuk memposisikan tampilan turunan dalam tata letak.
+Dalam constraint layout ini diberi id constraintLayout, diberi warna background purple_200 yang telah
+didefinisikan dahulu dalam file colors.xml, dan lebar serta tinggi layout menggunakan match_parent
+agar tampilan aplikasi sama dengan lebar dan tinggi layar smartphone-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+    <!-- Menggunakan recycler view di constraint layout untuk menampilkan daftar Affirmations.
+      lalu diberi id recycler_view, lebar dan tinggi layout menggunakan wrap content,
+      digunakan atribut scrollbars yaitu vertical agar dapat menscroll layar secara vertikal,
+      dan digunakan LinearLayoutManager sebagai atribut pengelola tata letak RecyclerView.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<!-- Kalimat afirmasi yang digunakan dalam projek ini disimpan sebagai resource string
+yang diberi nama app_name sebagai Judul Tampilan
+dan diberi nama affirmation1 - affirmation10 sebagai teks afirmasi -->
+<resources>
+        <string name="app_name">Affirmations</string>
+        <string name="affirmation1">I am the architect of my life. I am the one who builds the foundation and chooses its contents.</string>
+        <string name="affirmation2">I forgive those who have harmed me in the past and peacefully break away from them.</string>
+        <string name="affirmation3">My ability to conquer challenges is limitless. My potential for success is infinite.</string>
+        <string name="affirmation4">Today, I abandoned my old habits and replaced them with new ones, which are more positive just for you.</string>
+        <string name="affirmation5">Thank you for fighting for your life for yourself.</string>
+        <string name="affirmation6">Good things are always coming into my life.</string>
+        <string name="affirmation7">New opportunities await me at every turn.</string>
+        <string name="affirmation8">My body is healthy. My mind is brilliant. My soul is calm</string>
+        <string name="affirmation9">Things will unfold at precisely the right time.</string>
+        <string name="affirmation10">Whatever happens now, is happening for my ultimate good.</string>
+
+</resources>

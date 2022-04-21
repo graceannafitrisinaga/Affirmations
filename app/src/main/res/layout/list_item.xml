@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <!-- Menggunakan linear layout sebagai cara penyusunan layout untuk mensejajarkan semua anak pada satu deretan vertikal,
+     lebar layout menggunakan match_parent dan tinggi layout menggunakan wrap_content, dan mengatur orientasi secara vertikal-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Menggunakan ImageView untuk menampilkan gambar melengkapi item daftar afirmasi pada setiap layout, yang ada dalam R.drawable.image1 - R.drawable.image10
+        di file Datasource.kt. Lalu diberi id item_image, lebar layout menggunakan wrap_content, tinggi layout sebesar 194dp,
+        pada atribut scale type diberi centerCrop agar jika gambar terlalu besar atau tidak sesuai dengan tinggi dan lebar layout yang digunakan dalam imageview ini
+        maka akan dipotong pada bagian tengah gambar untuk ditampilkan, dan atribut importantForAccessibility adalah no karena gambar digunakan untuk tujuan dekoratif-->
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop" />
+
+        <!-- Menggunakan TextView untuk menampilkan setiap item daftar afirmasi pada setiap layout, yang ada dalam R.string.affirmation1 - R.string.affirmation10
+        di file Datasource.kt. Lalu diberi id item_title, lebar dan tinggi layout menggunakan wrap_content, jarak padding 16dp.
+        lalu digunakan atribut textAppearance ke ?attr/textAppearanceHeadline6 untuk menentukan gaya teks tertentu -->
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
